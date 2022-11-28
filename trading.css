@@ -1,0 +1,133 @@
+:root {
+    --blue: rgb(0, 162, 255);
+    --blue-light: rgb(71, 187, 255);
+    --orange: rgb(239, 102, 44);
+    --orange-light: rgb(255, 180, 126);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.calculator-container {
+    top: 0;
+    background-color: var(--blue);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.chart {
+    width: 50%;
+    background-color: white;
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+}
+
+.chart-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    height: 40px;
+    width: 80px;
+}
+
+#button {
+    height: 50px;
+    width: 100px;
+    background-color: white;
+    border: none;
+    font-size: 0.95rem;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+#button2 {
+    height: 50px;
+    width: 100px;
+    background-color: var(--orange);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#button:hover {
+    background-color: rgb(222, 243, 255);
+    height: 53px;
+    width: 106px;
+    transition: 70ms;
+}
+
+#button2:hover {
+    background-color: rgb(255, 169, 107);
+    height: 53px;
+    width: 106px;
+    transition: 70ms;
+}
+
+.notation-container {
+    background-color: white;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center
+}
+
+.input {
+    text-align: center;
+}
+
+#resultados-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#resultados {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-text {
+    font-size: 1.2rem;
+}
+
+.operaciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 120px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#id-ganada {
+    color: var(--blue);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#id-perdida {
+    color: var(--orange);
+    font-size: 1.1rem;
+    font-weight: bold;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="trading.css" rel="stylesheet">
+    <title>Trading notation</title>
+</head>
+<body> 
+    <div class="calculator-container">
+
+        <p class="header-text">Ingrese el porcentaje de ganancia</p>            
+        <input type="text" id = "i1" class="input">
+        <p class="header-text">Ingrese el porcentaje de pérdida</p>            
+        <input type="text" id = "i2" class="input">
+
+        <button id="button" onclick="ganancia()">Ganancia</button>
+        <button id="button2" onclick="perdida()">Pérdida</button>
+    </div>
+    <div class="chart-container">
+        <div class="chart">
+            <canvas id="myChart"></canvas>
+        </div> 
+    </div>
+    <div id="resultados-container">
+        <div id="resultados">
+            <div id="ganancias" class="operaciones">
+                <h3>ganadas: </h3>
+                <p id="id-ganada" class="reslutados">0</p>
+            </div>
+            <div>
+                <p>
+                    |
+                </p>
+            </div>
+            <div id="perdidas" class="operaciones">
+                <h3>perdidas: </h3>
+                <p id="id-perdida" class="reslutados">0</p>
+            </div>
+        </div>
+        <div class="notation-container" id="notation-container"></div>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="trading.js"></script>
+</body>
+</html>
