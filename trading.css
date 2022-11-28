@@ -116,8 +116,6 @@ input {
     flex-direction: row;
     justify-content: space-evenly;
     width: 120px;
-    margin-top: 20px;
-    margin-bottom: 5px;
 }
 
 #id-ganada {
